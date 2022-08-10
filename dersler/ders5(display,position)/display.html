@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        a {
+            background-color: aqua;
+            display: block;
+            padding: 10px;
+        }
+
+        
+            
+        span {
+
+            background-color: orange;
+            margin: 50px;
+            padding: 20px;
+            display: block;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+            border: 2px solid red;
+            margin-top: 5px;
+            display: inline;   /*<!-- inline da height ve with işlemez -->*/
+        }
+
+        #box2 {
+            background-color: black;
+            /* display: none; */ /* burada ise elemanın görüntüsü ve yeri kaybolur */
+            /* visibility: hidden;  buada eleman görülmez ama yerini korur */
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-----İnline Element-------->
+    <a href="">Clarusway</a>
+    <button>Clarusway</button>
+    <span>ben</span>
+
+    <!-- block elementler-->
+    <div class="box">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box">box3</div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

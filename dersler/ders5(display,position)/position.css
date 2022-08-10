@@ -1,0 +1,62 @@
+.main {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 1000px;
+    margin: 30px;
+    padding: 5px;
+    /* position: relative; */
+
+}
+
+.box1 {
+    width: 100px;
+    /* margin: auto; */
+    height: 100px;
+    background-color: blueviolet;
+    /* position: fixed; */
+    top: 100px;
+    left: 100px;
+    position: relative;
+    top: 50px;
+    left: 0;
+    z-index: 4;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color:darkgoldenrod;
+    position: relative;
+    /* top: 20px;
+    left: 20px; */
+    z-index: 200;
+
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color:greenyellow;
+    /* position: absolute; Akıştan çıkarır.konum belitmek lazım */
+    /* top: 20px; */
+    left:0px;
+    /* position: sticky; */
+    /* left: 0;
+    top: 65px; */
+    position: relative;
+    bottom: 65px;
+    z-index: 10; /* indeks te verilen numara büyükse öne çıkar */
+
+}
+
+.in {
+    width: 30px;
+    height: 30px;
+    background-color: darkgrey;
+    font-size: .5rem;
+    color: aliceblue;
+    position: absolute; /* burada hiçbir yerde relative olmazsa body e göre konum alır */
+    bottom:0;
+    right: 0;
+
+}
