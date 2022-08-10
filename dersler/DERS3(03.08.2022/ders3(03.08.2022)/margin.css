@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  background-color: orange;
+  margin: 15px;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: darkslateblue;
+  border: 10px solid pink;
+  margin: 20px 15px 20px 40px;
+  width: 100px;
+  margin: auto; /*genişlik varsa margin auto çalışır.*/
+}
+
+.box3 {
+  background-color: rgb(189, 174, 181);
+}
+
+.box4 {
+  background-color: cyan;
+}
+
+/*marginler üst üste gelince büyük olan varsa küçüğü içine alır*/
+/* margin inherit uygulayacağımız yerin bir üstünde (yani uyguladığımızı kapsayan div,ul vs) margin neyse onu kullanır.*/

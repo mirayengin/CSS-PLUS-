@@ -1,0 +1,32 @@
+body{
+    padding: 50px;
+    /* border: 1px solid red; */
+}
+
+a{
+    border: 1px solid red;
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none; /* alt cizgileri yok eder */
+    background-color: orangered;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    background-color: chartreuse;
+    color: black;
+
+} /* mouse üzerine gelince butonun ne yapsın */
+
+
+a:visited{
+    /* color: blue; Tıkladığın butonların rengi değişsin diye */
+
+}
+
+a:active{
+    background-color: bisque; /* Butonu tıkladığında arka plan rengi değişir */
+
+}
+

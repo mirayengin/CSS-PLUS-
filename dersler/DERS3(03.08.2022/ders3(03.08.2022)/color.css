@@ -1,0 +1,29 @@
+.box1{
+    /* background-color: lawngreen; */
+    background-color: #f00;
+}
+
+.box2{
+    /* background-color:blue */
+    background-color: #0f0; /* hex tipi renk yazma*/
+}
+
+.box3{
+    /* background-color:red */
+    background-color: #f0f00f;
+}
+
+.box4{
+    /* background-color:goldenrod; */
+    background-color: rgb(255, 000, 100);
+}
+
+.box5{
+    /* background-color:yellow; */
+    background-color: rgb(200, 150, 50); /*rgb tip renk yazımı*/
+}
+
+.box6{
+    /* background-color:magenta; */
+    background-color: hsl(0, 100%, 40%); /*hsl tipi renk yazımımı . sondali ligthless bunu 0 yaparsak siyah 100 yaparsak beyaz olur. Ortadaki değerde griliği yani doygunluğu. baştaki ise 0 dan başlayıp 360 a kadar  0 burada kırmızı 120 yeşil 240 mavi*/
+}

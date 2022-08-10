@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formlar</title>
+    <link rel="stylesheet" href="css.css">
+
+    <style>
+        #yorum{
+            resize: none;
+            width: 300px;
+            height: 100px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Clarusway</h1>
+
+    <form action="result.html" method="get">
+        
+    </div>
+        <label for="name">Adınızı Giriniz</label> <!-- yazıya tıkladığında kutucuk aktif olmasını sağlar..Birde inputa id verilmeli ve label daki form kısmının içine yazılan değer aynı olmalı-->
+        
+        <input type="text" name="isim" id="name"placeholder="Isminizi Giriniz"> <!-- name ile userın girdiği bilgileri tutarız.-->
+        <br>
+        <label for="lastname">Soyadınızı Giriniz</label>
+        <input type="text " name="Soyad" id="lastname" placeholder="Soyadınızı Giriniz" required> <!-- requared olan yer zorunlu doldurulacak yerdir doldurulmazsa gönderilmez-->
+    <div>
+
+    <div>
+        <label for="sifre">Parolanızı Giriniz</label>
+        <input type="password" name="Girilen Parola"  id="sifre" placeholder="parola">
+
+    </div>
+
+    <div>
+        <p>Cinsiyetinizi Giriniz</p>
+        <label for="gender1">Erkek</label>  
+        <input type="radio" name="cinsiyet" id="gender1" value="Erkek"> 
+        
+        <label for="gender2">Kadın</label>
+        <input type="radio" name="cinsiyet" id="gender2" value="Kadın"> <!-- nameler burada aynı olmalı tüm secenekler için çünkü nameler farklı olursa birini seçersek diğeri de aktif olmaz tüm tıkladığımız secenekler backend tarafında tutulur.-->
+    </div>
+
+    <div>
+        <p>Favori Hayvanlarınız</p>
+        <label for="Panda">Panda</label>
+        <input type="checkbox" name="hayvan1" id="Panda" value="Panda">
+
+        <label for="Balık">Balık</label>
+        <input type="checkbox" name="hayvan2" id="Balık" value="Balık"> <!-- name ile backend de bilgileri tutuyoruz
+        id ve for asynı olunca yazıya tıklayınca seçim yapıyoruz.
+        value ile de seçtiğimiz değerin display edilmesi sağlanır.Bir nevi değer atayarak.-->
+    </div>
+    <br>
+
+    <div>
+        <label for="age">Yaş</label>
+        <input type="number" name="Girilen yaş" id="age" step="2" min="18" max="45"> <!-- step ise bunu yazınca ne kadar arttırmak istersek o sayıyı yazıyoruz.
+        min ile de 18 den küçük değerler girilemez
+        max ilede girilen sayıdan büyük değer girilemez. -->
+
+    </div>
+    <br>
+
+    <div>
+        <label for="bul">Arama</label>
+        <input type="search" name="aranan kelime" id="bul" maxlength="10" minlength="2"> <!-- maxlenght ilede de aranacak kelime uzunluğunu sınırlarız.
+        minlenght ilede en kısa ne kadar uzun olacak onu ayarlayabiliriz-->
+    </div>
+    <br>
+    <div>
+        <label for="renk">Renkler</label>
+        <input type="color" name="seçilen_renk" id="renk">
+    </div>
+    <br>
+
+    <div>
+        <label for="date">Date</label>
+        <input type="date" name="Seçilen_Tarih" id="date"> <!-- tarih yine max ve min olarak sınırlandırılabiliyor.-->
+    </div>
+
+    <div>
+        <label for="email">Email_girin</label>
+        <input type="email" name="Girilen_email" id="email"> <!-- email formatında değer girilmeli.-->
+    </div>
+
+    <div>
+        <label for="dosya">Dosya</label>
+        <input type="file" name="Seçilen Dosya" id="dosya"> <!-- dosya seçmemizi sağlar.-->
+    </div>
+
+    <div>
+        <label for="telnu">Tel numarası</label>
+        <input type="tel" name="Girilen_tel" id="telnu" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx"> <!-- patern:ile girilecek numaranın biçimini yani formatını belirliyoruz.
+        placeholder: ile nasıl girileceği bilginin yada ne gireceğimizi yazdırabiliyoruz kutucuk içine.-->
+    </div>
+
+    <div>
+        <label for="tatlı">Hangi Tatlıyı İstersiniz:</label>
+        <br>
+        <select name="Seçilen_Tatlı" id="tatlı" size="3" multiple>
+            <option value="Sütlaç">Sütlaç</option>
+            <option value="Keşkül">Keşkül</option>
+            <option value="Aşure">Aşure</option>
+            <!-- multiple :ile çoklu seçim yapılabiliyor
+            size: ile en çok ne kadar birden seçebileceğimizi bize söylüyor.-->
+        </select>
+    </div>
+
+    <div>
+        <label for="tatlı1">Hangi Tatlıyı İstersiniz:</label>
+        <br>
+        <select name="Seçilen_Tatlı1" id="tatlı1" size="3" multiple>
+            
+        <optgroup label="Sütlü Tatlılar">
+            <option value="Sütlaç">Sütlaç</option>
+            <option value="Keşkül">Keşkül</option>
+            <option value="Aşure">Aşure</option>
+        </optgroup>
+
+        <optgroup label="Şerbetli Tatlılar">
+            <option value="Baklava">Baklava</option>
+            <option value="Katmer">Katmer</option>
+            <option value="Kadayıf">Kadayıf</option>   
+        </optgroup> <!--Bu element gruplandırmaya yarıyor select ile yazılanları-->
+    </div>
+    <br>
+
+    <div>
+
+        <label for="yorum">Yorum</label>
+        <textarea name="Girilen_Yorum" id="yorum" cols="30" rows="10" placeholder="Yorum Lütfen"></textarea>
+
+    </div>
+
+    <div>
+        <label for="input_browser">Browsers:</label>
+        <input type="text" name="Kullanılan_Browser" id="input_browser" id="browsers" list="browsers">
+
+
+        <datalist id="browsers">
+            <option value="FireFox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+        </datalist>        
+
+    </div>
+
+    <div>
+        <fieldset> <!--Fprma çerçeve vermek için kullanılıyor.-->
+            <legend>Kişisel Bilgiler</legend> <!-- bu taplonun ismi vgibi diyebiliriz.-->
+            <label for="fname">isim</label>
+            <input type="text" name="isim" id="fname">
+            <br>
+
+            <label for="sname">Soyisim</label>
+            <input type="text" name="soyisim" id="sname">   
+        </fieldset>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <br><br><br>
+        <input type="submit" value="Gönder">
+        <br>
+
+        <input type="reset" value="Sıfırla"> <!--Girilen değerler sıfırlanır.-->
+    </form>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

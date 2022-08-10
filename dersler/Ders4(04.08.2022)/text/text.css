@@ -1,0 +1,52 @@
+h2{
+    text-align: center; /* ortalama */
+    text-transform: uppercase;
+}
+
+#par1{
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 5rem; /*kelimeler arasını açar (word) */
+    direction: rtl;
+}
+
+#par2{
+    color: rgba(255,0,0,1);
+    text-align: right;
+    text-transform: lowercase;
+    letter-spacing: 10px; /* Harfler arasını açar (letter)*/
+}
+
+#par3{
+    color: #852357;
+    text-align: left;
+    text-decoration: line-through dashed red 5px; /* üstünü çizer*/
+    text-indent: 2rem; /* Satır boşluğu yani girintisi yapar */
+    unicode-bidi: bidi-override; /* AYNA YANSİMASI GİBİ YAPAR */
+
+
+}
+
+#par4{
+    color: hsl(120, 100%, 50%);
+    text-align: justify;
+    text-decoration: underline double orange;
+    line-height: 2rem; /* satrlar arasını açar (line)*/
+    text-shadow: 5px 10px 20px black; /*yazı ya gölge verir. */
+}
+
+#par5{
+    color: greenyellow;
+    text-decoration: overline wavy yellow;
+    column-count: auto;
+    column-rule:  3px solid purple;
+    -webkit-column-count: 3;
+
+}
+
+#span1{
+    color: fuchsia;
+    text-decoration: overline wheat ;
+    font-family: 'Roboto Serif', serif;
+}

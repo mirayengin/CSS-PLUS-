@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 5px dotted red; */ /*herşeye uygular burda ne verirsek*/
+}
+
+
+.container{
+    background-color: fuchsia;
+    padding: 20px;
+
+
+}
+
+.div1{
+
+    background-color: chartreuse;
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+
+}
+
+.div2{
+    box-sizing: border-box;
+    background-color: darkorange;
+    width: 150px;
+    height: 150px;
+    border: 3px  solid red;
+    padding: 20px;
+    /* margin: 20px; */
+}
+
+.div3{
+    background-color: greenyellow;
+    width: 150px;
+    height: 150px;
+    
+}
+

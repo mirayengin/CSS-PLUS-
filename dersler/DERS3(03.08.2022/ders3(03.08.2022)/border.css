@@ -1,0 +1,26 @@
+.p1{
+    border-width: 3px 20px 1px 5px;
+    border-style: solid inset ;
+    border-color: brown yellow green purple;
+}
+
+.p2{
+    border: 5px dashed pink;
+}
+
+.p3{
+    border: 10px solid darkmagenta;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: deeppink;
+
+}
+
+.p4{
+    border: 10px double purple;
+}
+
+.p5{
+    border: 20px groove greenyellow
+}
