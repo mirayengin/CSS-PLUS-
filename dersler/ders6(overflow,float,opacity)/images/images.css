@@ -1,0 +1,19 @@
+.container {
+    background-image: url(./resim-2\ \(2\).jpg);
+    border: 3px solid red;
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    color: chartreuse;
+    opacity: 0.5;
+    padding-left: 50px;
+}
+
+#paragraf {
+    width: 80%;
+    text-align: justify;
+
+}
