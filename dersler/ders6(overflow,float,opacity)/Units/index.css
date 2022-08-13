@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh; /* Bu diğer containerlara yükseklik vermemizi sağlar. bunu  da body de vh ile veririz yoksa ki yemez. Yükseklik vermezsek body ye height çalışmaz elemanlar için */
+    background-color: darkgreen;
+}
+
+.abs {
+    background-color: aqua;
+    width: 10cm;
+}
+
+.div2 {
+    background-color: darkblue;
+    width: 50%;
+    height: 50%;
+
+}
+
+.div3 {
+    background-color: orange;
+    width: 50%;
+    height: 50%;
+
+}
+
+.div4 {
+    background-color: blueviolet;
+    width: 50vw; /*bu özellik içinde bulunduğu containerdan bağımsız genişlik ve yüksklik vermemizi sağlar */
+}
+
+.div5 {
+    font-size: 1em; /*16px*/
+}
+
+.div6 {
+    font-size: 2em; /*32*/
+}
+
+.div7 {
+    font-size: 3em;/*96*/
+}
+
+/* (em) kullanrsak kapsayanın fonsıze ına göre içtekiler verir. Örnek dıştaki 1em içteki 2em içteki 16çarpı2 = 32 olur */
+
+.div8 {
+    font-size: 1rem;
+}
+
+.div9 {
+    font-size: 2rem;
+}
+
+.div10 {
+    font-size: 3rem; 
+}
+
+html {
+    font-size: 10px;
+}
+/* bu rem htmlden yani kök tag dan alır büyüklüğü bunu değiştirebiliriz html {font-size:10px; dersek artıl 1 rem 10px Bu değişim tüm  rem değeri olan elemanları etkiler.*/
+    /* HTML deki root html etiketidir.*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

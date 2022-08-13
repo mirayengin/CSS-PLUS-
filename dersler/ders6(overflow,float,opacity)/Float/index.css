@@ -1,0 +1,40 @@
+img {
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+p {
+    background-color: blueviolet;
+    text-align: justify;
+}
+
+.clear {
+    clear: both; /*Bunu istediğimix eleman fotonun vya başkabir elemanın yanında olmasını istemediğ*imiz zaman htmlde önce div oluşturup sonrada clear ile alta atıyoruz. Clear yapacağımız element in blok olma şartı vardır */
+}
+
+.box {
+    
+}
+
+.box1 {
+    background-color: darkgoldenrod;
+    float: left;
+    width: 33.33%;
+
+}
+
+.box2 {
+    background-color: darksalmon;
+    float: left;
+    width: 33.33%;
+}
+
+.box3 {
+    background-color: darkturquoise;
+    float: left;
+    width: 33.33%;
+    /* width: 20%; */
+}
+/* Burada btün satırı kaadığı için yazı yukarı cıkmadı ama kaplamadığında hemen çıkar. */

@@ -1,0 +1,41 @@
+* {
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header {
+    background-color: cyan;
+    margin-top: 10px;
+}
+
+main {
+    background-color: darkgreen;
+    padding: 5px;
+}
+
+aside {
+    background-color: darkturquoise;
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin-left: 15px;
+}
+
+article {
+    background-color: dimgrey;
+    width: 70%;
+    height: 300px;
+    float: left;
+
+}
+
+footer {
+    background-color: coral;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block; /*float kaymalarını önlemek için kullanıyoruz */
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Lobster&family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
+.{
+    font-family: 'Roboto','Serif','serif';
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* maddelerdeki işaretleri kaldırmak için*/
+}
+
+.class li {
+    float: left;  /* yan yana getirmek için maddeleri */
+    position: relative;
+    width: 150px;
+}
+
+.class li ul {
+    display: none; /*açıır buton yaparken alt başlıkların görünmemesiçin */
+    position: absolute; /* açılır butonda sakladığımız maddeleri buraya altına yani posizyonlamak için */
+    top: 40px;
+    left: 0;
+}
+
+.class li a{
+    display: block;
+    width: 150px;
+    height: 40px;   /* dikey hizalama için */
+    line-height: 40px;  
+    background-color: rgb(22, 22, 139);
+    text-align: center; /*ortaya hizalama için yazıları vs */
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.class li a:hover{
+    background-color: rgb(4, 4, 29);
+}
+
+.class li:hover ul{
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
