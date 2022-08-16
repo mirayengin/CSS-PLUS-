@@ -1,0 +1,78 @@
+/* nav .navbar : nav içinde navbar clasını ara demek
+nav.navbar : clası navbar olan nav demek buna dikkat */
+
+
+/* .kutu p {] : kutu classı içindeki bütün p leri bul
+   .kutu > p {} : başında kutu classı olanları bul değiştir. */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.kutu p {
+    color: red; /* Bu kullanım Decendent Selector */
+}
+
+.kutu > p {
+    color: green; /* Burada kutu class ı içindeki  başka bir etiketin içinde olmayan (p)leri değiştir. Bu kullanım Child Selector*/
+}
+
+h1 + p { /* Burada h1 in kapatma etiketi sonrasındaki ilk p yi değiştir demek (Adjacent Sbling) */
+    color: purple;
+
+}
+
+
+h1 ~ p { /* h1 den sonraki tüm p elementlerini seçer. (General Sibling Selector)*/
+    color: darkorange;
+
+}
+
+.kutu:checked {
+    /* Check olduğunda verdiğim komutları yürüt */
+}
+
+:active {
+    /* Tıklandığında yazdığım komutları çalıştır */
+}
+
+
+
+h3 {
+    margin: 5rem;
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid red;
+    outline: 2px solid rgb(136, 0, 255);
+    outline-offset: 10px; /* outline ve border arasını açar */
+    border-radius: 10px; /* widht ve height aynı olup border-radius %50 verirsek daire olur. */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
