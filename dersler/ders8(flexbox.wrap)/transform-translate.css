@@ -1,0 +1,179 @@
+/**** ROTATE ********/
+
+.yazi{
+    text-align: center;
+    font-size: 2rem;
+    width: 50vh;
+    margin: 2rem auto;
+}
+
+.yazi1 {
+    background-color: blueviolet;
+    transform: rotateX(45deg); /*! 90 ve 270 derecelerde yazılar tam dik olduklarından ve 3-boyutlu olarak bakamadığımız için gözükmezler */
+}
+.yazi2 {
+    background-color: red;
+    transform: rotateY(180deg);
+}
+.yazi3 {
+    background-color: yellow;
+    transform: rotateZ(-45deg);
+    transform: rotate(45deg); /* rotateZ ile aynı çalışıyor.*/
+}
+
+
+/********** SCALE *********/
+
+.yazi4 {
+    background-color: brown;
+}
+
+.yazi4:hover {
+    transform: scaleX(1.5) scaleY(1.5); /* x  y ekseninde 1.5 kat büyüt yada scale(1.5,1.5) */
+
+}
+
+.yazi5 {
+    background-color: orange;
+}
+
+.yazi5:active {
+    /* transform: scale(1.1,1.8); */
+    transform: scale(98%); /* basılma izlenimi vermek için önemli*/
+
+}
+
+
+.yazi6 {
+    background-color: gray;
+}
+
+
+/********** TRANSLATE -TRANSİTİON ***********/
+
+.translate {
+    background-color: yellow;
+    color: red;
+    font-weight: 800;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    transition: background-color 1s, transform 1s;
+    /* transition: all 1s; */
+}
+
+.x {
+    transition: transform 1s;
+}
+
+.x:hover {
+    transform: scale(50%) translateX(50%) rotate(180deg);
+    /* transform: translateX(50px); */
+    background-color: green;
+
+}
+
+.y:active {
+    transform: translateY(-50px);
+    background-color: tomato;
+}
+.xy:active {
+    transform: translate(50px,100px);
+    background-color: fuchsia;
+}
+
+
+.btndiv {
+    text-align: center;
+}
+
+.btn {
+    padding: 1rem;
+    width: 7rem;
+    background-color: gold;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    transition: background-color 0.5s, color 0.8s;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
