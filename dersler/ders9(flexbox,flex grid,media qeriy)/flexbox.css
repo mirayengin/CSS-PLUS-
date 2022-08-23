@@ -1,0 +1,145 @@
+*{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+
+    /* elemanların diziliş yönü : column row row-reverse, column-reverse*/
+    flex-direction: row;  /*default*/
+    background-color: fuchsia;
+    flex-wrap: wrap; /** Ekran küçülünce sıkıştırma  asağıya at.Default değeri nowrap tir.*/
+    flex-direction: row-reverse; /* içindeki contentlerin sıralaması satırda değişir */
+
+    /*column-reverse de sutun hizasında değiştiriyor yerlerini */
+
+    justify-content: center; /* Ortalamak için. flex-end sağa, flex-star soldan başla sıralamaya
+    evenly aralardaki boşlukları eşitler
+    space -between aralara boşluk bırakır
+    */
+   
+    /* Yatay Hizalama: justify-content
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+    
+    padding: 0.5rem;
+    gap: 40px 80px;
+     /**?gap, flex içerisindeki elemanların dikey ve yatay boşluklarını belirlemek için kullanılabilir. ilk yazılan yatay (satırlar arası) boşluk, 2. yazılan ise dikey (sutunlar arası) boşluktur */
+}
+
+.container div {
+    background-color: brown;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem;
+}
+
+
+
+/* DİKEY HİZALAMA */
+
+/* fex-direction : row ve flex te diğer hizalamalar ise flex-start tır */
+
+/* flex-direction: cloumn yaparsak yatay hizalamayı aling-items ile yaparız normalde ise justyfly-contect ile */
+
+.container1 {
+    height: 20rem;
+    background-color: yellow;
+    display: flex;
+    gap: 20px 10px;
+    padding: 0.5rem;
+    flex-wrap: wrap; /*bu açıksa aling-content kullanmak mantıklı (nowrap ise ) aling-items kullanmak mantıklı */
+    justify-content: center;/*yatay hizalama*/
+    align-items: center; /*dikey hizalama*/
+    /* flex-start üst tarafa, flex-end sona hizalama yapar aling-items de */
+    /* align-items: stretch; uzatılır elemanlar */
+
+    align-content: flex-end; /* Çoklu satırlarda satırlar arasında oluşan boşlukları yok eder ve kutuları birleştirir. */
+
+    overflow: auto; /* ekran küçültülünce taşmaları engellemek için kullanılır.*/
+
+
+
+
+}
+
+
+
+.container1 div {
+    background-color: rgb(18, 171, 21);
+    height: 5rem;
+    width: 5rem;
+}
+
+
+
+/******* FLEX-GROW *****/
+
+.container2 {
+    background-color: gold;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.container2 div {
+    background-color: khaki;
+    width: 5rem;
+    flex-grow: 1; /*! 1 olursa elemanlar eşit büyüryer olursa */
+    padding: 00.5rem;
+    flex-basis: auto; /*! Elemanların ihtiyacı kadar genişliği paylaştırır fakat 0 yaparsak sadece içeriğin büyüklüğü kadar bir genişlik veriyor. Bunu kullanırsak witght in önemi kaybolur. */
+}
+
+div.grow2 {
+    flex-grow: 2; /*! Bu eleman diğerlerine göre iki kat daha fazla büyüyecek yer olursa */
+}
+
+
+div.grow3 {
+    flex-grow: 3; /*! üç kat büyüyecek yer olursa */
+}
+
+div.nogrow {
+    flex-grow: 0; /*! Bu artık büyümez */
+}
+
+
+/** FLEX-GROW  (width)*/
+/*! width lere göre oran */
+.container3 {
+    background-color: rgb(118, 105, 255);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+  
+  .container3 div {
+    background-color: lightcyan;
+    width: 5rem;
+  }
+
+  div.div1 {
+    width: 10%; /*! Burada kullanılan % parent in % kadar yer kaplar. */
+
+    /*? "vw kullanılsaydı buda ekranın yani görülebilir kısma göre ayarlar width i */
+  }
+ 
+  div.div2 {
+    width: 20%;
+  }
+
+  div.div3 {
+    width: 30%;
+  }
+
+  div.div4 {
+    width: 40%;
+  }
+
+
+
+

@@ -1,0 +1,36 @@
+/* Flexbox gap içeride elemanların arasındaki boşlukları kontrol etmek için kullanılır.*/
+
+/*?gap, flex içerisindeki elemanların dikey ve yatay boşluklarını belirlemek için kullanılabilir. ilk yazılan yatay (satırlar arası) boşluk, 2. yazılan ise dikey (sutunlar arası) boşluktur */
+
+
+
+/*******FLEX-GROW **********/
+
+/*flex-grow elemanların içerideki diğer elemanlara göre bbüyüme oranını belirler. */
+
+
+/*********FLEX-SHRİNK **********/
+
+/*Buda küçülme oranını belirler. */
+
+/***********FLEX-BASİS *******/
+
+/* Satırdaki max witght i elemanlar arasında paylaştırır. */
+
+
+
+
+/******FLEX-GRİD *****/
+
+/* Dikey ve yatay da hizalamak içindir. Genişliği 12 eş parçaya yani cloumn'a böler.*/
+
+
+
+
+
+
+
+
+
+
+
