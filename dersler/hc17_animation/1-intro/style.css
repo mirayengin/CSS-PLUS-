@@ -1,1 +1,76 @@
 /******* ANIMATION INTRO *******/
+.outer {
+    background-color: fuchsia;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.inner {
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+    /* transition: transform 1s ease-in-out, background-color 1s; !yavaş başla hızlan yavaşla */
+
+}
+
+.outer:hover inner {
+    /* transform: translateX(100%);
+    background-color:deeppink; */
+
+    animation: travel 1s ease-in-out;
+
+    /*? Animasyon tekrar sayısı */
+    animation-iteration-count: 2; /*! Tekrar sayısı*/ /*? infinite yaparsak sonsuz calışır.*/
+
+
+
+
+    /*!Animasyon Başlangıç Yönü*/
+
+    animation-direction: normal; /*? alternate= gider-gelir, reverse = tersine gider. normal = default değer, alternate-reverse = gelir-gider */
+
+
+    /*! Animasyon Doldurma Modu (none, forwards, backwards, both)*/
+    animation-fill-mode: forwards; /*? Animasyon son yerde biter. */
+    animation-fill-mode: backwards; /*? başaldığı yere döner */
+    animation-fill-mode:both; /*? Forwards gibi çalışır. */
+
+
+    /*! Animasyon Geçikmesi */
+    animation-delay:1s; /*? İşleme bir sani,ye sonra başla */
+    animation-delay:-2s; /*? İşleme iki saniyelik atlama yapar (yapmaz animasyonu */
+
+
+    animation: travel 2s ease-in-out 0.5s 2 alternate forwards; /*! kısa yol yöntemi */
+
+
+    
+}
+
+
+@keyframes travel {
+    /*? başlangıc konumu */
+
+    0% {
+        transform: translateX(0);
+
+    }
+
+
+    /*? Başlangıca göre 100 birim aşağı */
+    33%{
+        transform: translateY(100%);
+
+    }
+    
+    66% {
+        transform: translate(100%, 100%);
+    }
+
+    100% {
+        transform: translate(100%, 0);
+    }
+
+
+}
